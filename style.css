@@ -1,0 +1,75 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.modal_btn{
+    width: 420px;
+    height: 48px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    border: none;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+
+}
+.modal-active{
+    background-color: #000;
+    padding-right: 25px ;
+    padding-top: 25px;
+    display: flex;
+    padding-left: 25px;
+    justify-content: space-between;
+    width: 592px;
+    height: 100vh;
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    p{
+        color: white;
+        font-size: 36px;
+        font-weight: 600;
+
+    }
+    li{
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    button{
+        width: 22px;
+        height: 22px;
+        background-color: #000;
+        cursor: pointer;
+        border: none;
+    }
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.modal-dis_active {
+    background-color: #000;
+    padding-right: 25px ;
+    padding-top: 25px;
+    display: flex;
+    padding-left: 25px;
+    justify-content: space-between;
+    width: 592px;
+    height: 100vh;
+    opacity: 0;
+    transform: translateX(+100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    pointer-events: none;
+}
+
